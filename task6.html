@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript method array</title>
+  <title>Printing</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+<body>
+  <h1>javascript prototype method name befindobject, which finds a specific object from array  of objects, it should extend array prototype. </h1>
+<script type="text/javascript">
+
+	Array.prototype.beFindObject = function(property) {
+		var ar =[];
+		this.forEach((item) => {
+			ar.push(item[property]);
+
+			});
+		return ar;
+		};
+		var input = [{name:"ayushi",age:27},{name:"arushi",age:28}];
+		document.write(input.beFindObject('name'));
+		document.write("\n ");
+		document.write(input.beFindObject('age'));
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript beaddobject</title>
+  <title>Printing</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+<body>
+  <h1>javascript prototype method name beaddobject which extends array prototype, to add a object with its value to the array of objects.</h1>
+  <script type="text/javascript">
+  	Array.prototype.beaddobject = function(name,val) {
+  		this.forEach(function(object) {
+  			object[name] = val;
+
+  		});
+  	return this;
+  	};
+
+  	var sampleinput = [{name:"John",age:26},{name:"siva",age:27}];
+  	document.write(sampleinput.beaddobject("country", "india"));
+  </script>
+</body>
+</html>
